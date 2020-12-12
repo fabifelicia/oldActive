@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -36,3 +37,30 @@ export default function Routes() {
     </Stack.Navigator>
   );
 }
+=======
+/* eslint-disable comma-dangle */
+/* eslint-disable quotes */
+import { createStackNavigator } from "react-navigation";
+
+import SignIn from "./pages/signIn";
+import Main from "./pages/main";
+import Basic from "./pages/basic";
+import SignOut from "./pages/signOut";
+
+export default createStackNavigator(
+  {
+    SignIn,
+    Main,
+    Basic,
+    SignOut
+  },
+  {
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: "#DA552F"
+      },
+      headerTintColor: "#FFF"
+    }
+  }
+);
+>>>>>>> 1aa0e30b2d4b554add0cc64d07cbb3b5fd323c4a
